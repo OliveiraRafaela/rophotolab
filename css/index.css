@@ -1,13 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,600&display=swap);
+
 html {
   font-family: 'Open Sans',sans-serif;
   position: relative;
-  height: 100%
 }
 header {
   background-color: #000;
   color: #fff;
   width: 100%;
+  padding: 0;
+  margin: 0;
   position: fixed;
   top: 0; 
   left: 0;
@@ -18,15 +20,8 @@ header {
   align-items: center;
 }
 
-h1 {
-  margin: 0.5em;
-}
 
-ul {
-  list-style-type: none;
-  display:inline-flex;
-  padding-right: 1rem;
-}
+
 li { 
   padding-left: 0.5em;
   padding-right: 0.5em;
@@ -46,29 +41,44 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.logo {
+  margin: 0.5em;
+  padding-left: 0.5rem;
+}
+
+.menu {
+  list-style-type: none;
+  display:inline-flex;
+  padding-right: 1rem;
+}
+
+.content{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.home-img {
+  width: 65%;
+  object-fit: cover;
+}
+.home-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-img {
+  width: 60%;
+}
+
 .bio-content {
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /*
-  padding-top: 6em;
-  padding-bottom: 6em;
-  */
   padding: 6rem;
-
-}
-.home-img {
-  position: absolute;
-  width: 60%;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%,-50%)
-}
-
-.bio-img {
-  width: 50%;
 }
 .p-footer {
   margin-top: .5rem;
