@@ -1,0 +1,47 @@
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    max-width: 80%;
+}
+
+.one{
+    border-right: 1px solid black;
+}
+.two{
+    padding: 2rem;
+}
+
+.add-info{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    display: block;
+
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "n e" "p s" "m m";
+
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.name {
+    grid-area: n;
+}
+.email {
+    grid-area: e;
+}
+.phone {
+    grid-area: p;
+}
+.sub {
+    grid-area: s;
+}
+.msg {
+    grid-area: m;
+}

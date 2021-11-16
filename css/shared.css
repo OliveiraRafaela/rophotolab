@@ -62,5 +62,8 @@ h1 {
 }
 
 .content {
-  margin-top: 6rem 3rem auto;
-}
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+ }

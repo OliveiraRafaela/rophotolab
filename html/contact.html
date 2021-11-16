@@ -1,29 +1,68 @@
+<!doctype html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhotolabPhotolab - Contact Info</title>
+    <title>Photolab</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
-
     <header>
-        <h1 class="logo"><a href="./home.html">Rafaela Oliveira's Photolab</a></h1>
-        <ul class="menu"> 
-            <li><a href="./bio.html">Bio</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./cv.html">CV</a></li>
-            <li><a href="./contact.html">Contact Info</a></li>
+        <h1 class="logo"><a class="link-menu" href="./home.html">Rafaela Oliveira's Photolab</a></h1>
+        <ul class="menu">
+            <li class="li-menu"><a class="link-menu" href="./bio.html">Bio</a></li>
+            <li class="li-menu"><a class="link-menu" href="./gallery.html">Gallery</a></li>
+            <li class="li-menu"><a class="link-menu" href="./cv.html">CV</a></li>
+            <li class="li-menu"><a class="link-menu" href="./contact.html">Contact Info</a></li>
         </ul>
     </header>
-    <section>
-        <!---->
+    <section class="content contact-grid">
+        <article class="one"><h1>Send a menssage to us</h1>
+            <form action="#" method="post" class="contact-form">
+                <div class="name">
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" maxlength="100" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="phone">
+                    <label for="phone">Phome Number</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="sub">
+                    <label for="subject">Subject</label><br>
+                    <input type="text" maxlength="50" id="subject" name="subject" required>
+                </div>
+                <div class="msg"><label for="message">Message</label><br>
+                    <textarea name="message" id="messafe" cols="50" rows="10" maxlength="500" required>
+    
+                    </textarea><br>
+                    <input type="submit" value="Submit">
+                </div>
+            </form></article>
+        <article class="two">
+            <h1>Contact information</h1>
+            <div class="info">
+                <address class="add-info">
+                    <a href="mailto:rophotolab@gmail.com">rophotolab@gmail.com</a><br>
+                    (674) 914-4983 <br>  
+                    <a href="https://www.instagram.com/rophotolab/">&#64;rophotolab</a>  
+
+                </address>
+            </div>
+        </article>
+
+
     </section>
     <footer>
         <p class="p-footer">&copy; &nbsp;2021&nbsp;Rafaela Oliveira</p>
     </footer>
-
 </body>
 
 </html>
