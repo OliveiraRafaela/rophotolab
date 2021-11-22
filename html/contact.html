@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,8 @@
         </ul>
     </header>
     <section class="content contact-grid">
-        <article class="one"><h1>Send a menssage to us</h1>
+        <article class="one">
+            <h1 class="page-header">Send a menssage to us</h1>
             <form action="#" method="post" class="contact-form">
                 <div class="name">
                     <label for="name">Full Name</label><br>
@@ -41,18 +43,22 @@
                 </div>
                 <div class="msg"><label for="message">Message</label><br>
                     <textarea name="message" id="messafe" cols="50" rows="10" maxlength="500" required>
-    
+
                     </textarea><br>
                     <input type="submit" value="Submit">
                 </div>
-            </form></article>
+            </form>
+        </article>
         <article class="two">
-            <h1>Contact information</h1>
-            <div class="info">
+            <h1 class="page-header"> Contact information</h1>
+            <div>
                 <address class="add-info">
-                    <a href="mailto:rophotolab@gmail.com">rophotolab@gmail.com</a><br>
-                    (674) 914-4983 <br>  
-                    <a href="https://www.instagram.com/rophotolab/">&#64;rophotolab</a>  
+                    <span class="material-icons-outlined">email</span> 
+                    <a class="info contact-link" href="mailto:rophotolab@gmail.com">rophotolab@gmail.com</a>
+                    <span class="material-icons-outlined">phone</span>
+                    <p class="info">(674) 914-4983</p> 
+                    <span class="material-icons-outlined"> favorite_border</span>
+                    <a class="info contact-link" href="https://www.instagram.com/rophotolab/">&#64;rophotolab</a>
 
                 </address>
             </div>

@@ -1,3 +1,9 @@
+
+.page-header{
+    text-align: center;
+}
+
+
 .contact-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -7,17 +13,49 @@
 
 .one{
     border-right: 1px solid black;
+
+    justify-self: center;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .two{
-    padding: 2rem;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
+
 .add-info{
+    font-size: 1.2em;
+
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
+    padding: 3rem;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.material-icons-outlined {
+    
+    margin-right: 1rem;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.info {
+    grid-column: 2 / span 3;
+    align-self: center;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: black;
 }
 
 .contact-form {
