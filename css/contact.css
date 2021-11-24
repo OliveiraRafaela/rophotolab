@@ -28,6 +28,7 @@
 
 .add-info{
     font-size: 1.2em;
+    font-style: normal;
 
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -82,4 +83,10 @@
 }
 .msg {
     grid-area: m;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border-radius: 4px;
 }

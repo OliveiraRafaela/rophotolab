@@ -1,0 +1,30 @@
+h1, h2, p {
+    text-align: center;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+.container {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    max-width: 70%;
+}
+
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    padding-top: 3rem;
+  }
+  
+  .card {
+    max-height: 30%;
+  }
+  
+  .sample {
+    max-width: 100%;
+    border: 1px solid black;
+  }

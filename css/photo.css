@@ -1,0 +1,47 @@
+h1, h2 {
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    max-width: 80%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    padding-top: 3rem;
+}
+
+.unit {
+    border: 1px solid black;
+}
+
+.photo {
+    max-width: 100%;
+}
+
+.info {
+    max-width: 70%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.piece-desc {
+    text-align: left;
+}
