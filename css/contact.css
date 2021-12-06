@@ -78,7 +78,7 @@
 .phone {
     grid-area: p;
 }
-.sub {
+.pc-name {
     grid-area: s;
 }
 .msg {
@@ -86,6 +86,8 @@
 }
 
 .btn {
+    font-family: 'Open Sans', sans-serif;
+
     color: white;
     background-color: black;
     border-radius: 4px;

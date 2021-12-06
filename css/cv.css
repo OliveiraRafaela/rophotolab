@@ -6,7 +6,7 @@ h1, p {
 .cv-content {
     margin-top: 6rem;
     margin-bottom: 3rem;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 
@@ -42,4 +42,6 @@ h1, p {
     justify-content: center;
     align-items: center;
   }
+  
+
   
