@@ -8,17 +8,14 @@ h2{
 .container{
     margin-top: 6rem;
     margin-bottom: 3rem;
-    max-width: 90%;
+    max-width: 70%;
 }
 .serie{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
     padding-top: 3rem;
-}
-.unit{
-    border: 1px solid black;
 }
 
 .photo{

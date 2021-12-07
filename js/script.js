@@ -14,11 +14,21 @@ document.querySelector(`#gallery`).innerHTML = allTheImages
 const allTheApc = [`apc01.jpeg`, `apc02.jpeg`, `apc03.jpeg`, `apc04.jpeg`, `apc05.jpeg`, `apc06.jpeg`, `apc07.jpeg`, `apc08.jpeg`];
 const allThePdc = [`pdc01.jpeg`, `pdc02.jpeg`, `pdc03.jpeg`, `pdc04.jpeg`, `pdc05.jpeg`, `pdc06.jpeg`];
 const allTheTbc = [`tbc01.jpeg`, `tbc02.jpeg`, `tbc03.jpeg`, `tbc04.jpeg`, `tbc05.jpeg`, `tbc06.jpeg`];
+let _serieID = '';
+
+const apcElem = document.querySelector(`#apc`);
+//.addEventListener(`click`, setId(`apc`));
+const pdcElem = document.querySelector(`#pdc`);
+//.addEventListener(`click`, setId(`pdc`));
+const tbcElem = document.querySelector(`#tbc`);
+//.addEventListener(`click`, setId(`tbc`));
 
 
-document.getElementById(`#apc`).addEventListener(`click`, displayPhotos(`apc`));
-document.getElementById(`#pdc`).addEventListener(`click`, displayPhotos(`pdc`));
-document.getElementById(`#tbc`).addEventListener(`click`, displayPhotos(`tbc`));
+apcElem.addEventListener("click", (id = "apc") => {
+    this._serieID = id;
+    console.log(_serieID)} );
+
+
 
 
 function displayPhotos(idCod) {
