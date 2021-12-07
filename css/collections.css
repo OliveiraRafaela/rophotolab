@@ -21,3 +21,7 @@ h2{
 .photo{
     max-width: 100%;
 }
+
+.unit{
+    border: 1px solid black;
+}
