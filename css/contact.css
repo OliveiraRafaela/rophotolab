@@ -1,7 +1,5 @@
 
-.page-header{
-    text-align: center;
-}
+
 
 
 .contact-grid{
@@ -49,6 +47,13 @@
 
 }
 
+.page-header{
+    text-align: center;
+}
+.ctc_img {
+    margin-top: 1rem;
+}
+
 .info {
     grid-column: 2 / span 3;
     align-self: center;
@@ -92,3 +97,8 @@
     background-color: black;
     border-radius: 4px;
 }
+
+.big{
+    font-size: 10rem;
+}
+
