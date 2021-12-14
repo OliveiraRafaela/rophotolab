@@ -5,12 +5,23 @@
   align-items: center;
 
   margin-top: 6rem;
-  
-  
+   
 }
 
 .home-img {
   width: 70%;
   object-fit: cover;
+  display: block;
+  
 }
 
+@media screen and (max-width: 900px) {
+  
+
+  .home-img {
+    width: 80%;
+    object-fit: cover;
+    display: block;
+    
+  }
+}

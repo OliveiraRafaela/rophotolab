@@ -1,14 +1,19 @@
-h1, h2{
+h2{
+    font-size: 1.2rem;
     text-align: center;
 }
 
-h2{
-    font-size: 1.2rem;
+.serieTitle{
+    text-align: center;
 }
+
+
 .container{
     margin-top: 6rem;
     margin-bottom: 3rem;
-    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
 }
 .serie{
     display: grid;
@@ -24,4 +29,17 @@ h2{
 
 .unit{
     border: 1px solid black;
+}
+
+@media screen and (max-width: 900px){
+    .serie{
+        display: block;        
+        padding-top: 3rem;
+    }
+
+    .unit{
+        border: 1px solid black;
+        margin-bottom: 3rem;
+    }
+
 }

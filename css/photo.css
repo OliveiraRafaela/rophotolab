@@ -1,25 +1,19 @@
-h1, h2 {
-    text-align: left;
-}
-
 h2 {
     font-size: 1.2rem;
-}
-
-img {
-    max-width: 100%;
+    text-align: left;
 }
 
 .container {
     margin-top: 6rem;
     margin-bottom: 3rem;
-    max-width: 80%;
+    margin-right: auto;
+    margin-left: 5rem;
 }
 
 .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 3rem;
 
     padding-top: 5rem;
 }
@@ -29,9 +23,12 @@ img {
 }
 
 .photo {
-    max-width: 100%;
+    display: block;
 }
 
+.photoName {
+    text-align: center;
+}
 .info {
     max-width: 70%;
     padding-top: 1.5rem;
@@ -44,4 +41,31 @@ img {
 
 .piece-desc {
     text-align: left;
+}
+
+@media screen and (max-width: 900px){
+    .container {
+        margin: 1rem;
+    }
+
+    .card {
+        display: block;    
+        padding-top: 2rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        max-width: 100%;
+    }
+
+    .piece-desc {
+        text-align: center;
+    }
+        
 }
