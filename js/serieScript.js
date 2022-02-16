@@ -47,7 +47,7 @@ function displayPhotos(idCod) {
         case "apc":
             document.querySelector(`#serieTitle`).innerHTML = "A PAREDE CINZA";
             document.querySelector(`#serie`).innerHTML = allTheApc
-                .map((elmt) => `<div class="unit"> <a href="../html/photo.html?photoId=${elmt.src}" class="link-photo">
+                .map((elmt) => `<div class="unit"> <a href="../photo.html?photoId=${elmt.src}" class="link-photo">
 <img src="../img/${elmt.src}" alt="" class="photo"></a><h2>${elmt.alt}</h2></div>`)
                 .join('');
             break;
@@ -55,7 +55,7 @@ function displayPhotos(idCod) {
         case "pdc":
             document.querySelector(`#serieTitle`).innerHTML = "PEDAÇOS";
             document.querySelector(`#serie`).innerHTML = allThePdc
-                .map((elmt) => `<div class="unit"> <a href="../html/photo.html?photoId=${elmt.src}" class="link-photo">
+                .map((elmt) => `<div class="unit"> <a href="../photo.html?photoId=${elmt.src}" class="link-photo">
             <img src="../img/${elmt.src}" alt="" class="photo"></a><h2>${elmt.alt}</h2></div>`)
                 .join('');
             break;
@@ -63,7 +63,7 @@ function displayPhotos(idCod) {
         case "tbc":
             document.querySelector(`#serieTitle`).innerHTML = "THE BLURRY CITY";
             document.querySelector(`#serie`).innerHTML = allTheTbc
-                .map((elmt) => `<div class="unit"> <a href="../html/photo.html?photoId=${elmt.src}" class="link-photo">
+                .map((elmt) => `<div class="unit"> <a href="../photo.html?photoId=${elmt.src}" class="link-photo">
             <img src="../img/${elmt.src}" alt="" class="photo"></a><h2>${elmt.alt}</h2></div>`)
                 .join('');
             break;
