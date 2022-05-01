@@ -1,0 +1,120 @@
+/*
+https://www.npmjs.com/package/hamburger-menu
+*/
+
+.navbar {
+    background-color: #000000;
+    color: #ffffff;
+
+    position: relative;
+    margin: 0;
+    padding: 0 1rem;    
+    max-width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p {
+    background-color: inherit;
+    font-size: 4rem;
+    font-weight: 700;
+
+    padding: 2rem;
+    margin: 0;
+}
+.menu-links {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+}
+
+.menu-links li {
+    list-style: none;
+    display: block;
+}
+
+.menu-links a {    
+    padding: 2rem;
+    transition: all 0.3s ease-in;
+}
+
+.menu-links a:hover {    
+    font-style: italic;
+    /* text-decoration: underline; */
+    color: #FFF;
+}
+
+.hamburger {
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+
+    .menu {
+        width: 90%;
+
+        display: block;
+        position: absolute;
+        top: 66px;
+        transform: translateX(1000px);
+    }
+
+    .menu.active {
+        transform: translateX(0);
+        transition: transform 0.4s;
+        
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 100%;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        text-align: center;
+    }
+
+    .menu-links li {
+        margin: 1rem 0;
+        font-size: 2rem;
+        align-self: center;
+        width: 100%;
+    }
+
+    .menu-links a {
+        font-family: inherit;
+        font-size: inherit;
+        color: #FFF;
+    }
+}

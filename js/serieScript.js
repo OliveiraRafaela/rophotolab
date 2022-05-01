@@ -45,7 +45,7 @@ function displayPhotos(idCod) {
 
     switch (idCod) {
         case "apc":
-            document.querySelector(`#serieTitle`).innerHTML = "A PAREDE CINZA";
+            document.querySelector(`#serieTitle`).textContent = "A PAREDE CINZA";
             document.querySelector(`#serie`).innerHTML = allTheApc
                 .map((elmt) => `<div class="unit"> <a href="../photo.html?photoId=${elmt.src}" class="link-photo">
 <img src="../img/${elmt.src}" alt="" class="photo"></a><h2>${elmt.alt}</h2></div>`)
@@ -53,7 +53,7 @@ function displayPhotos(idCod) {
             break;
 
         case "pdc":
-            document.querySelector(`#serieTitle`).innerHTML = "PEDAÇOS";
+            document.querySelector(`#serieTitle`).textContent = "PEDAÇOS";
             document.querySelector(`#serie`).innerHTML = allThePdc
                 .map((elmt) => `<div class="unit"> <a href="../photo.html?photoId=${elmt.src}" class="link-photo">
             <img src="../img/${elmt.src}" alt="" class="photo"></a><h2>${elmt.alt}</h2></div>`)
@@ -61,7 +61,7 @@ function displayPhotos(idCod) {
             break;
 
         case "tbc":
-            document.querySelector(`#serieTitle`).innerHTML = "THE BLURRY CITY";
+            document.querySelector(`#serieTitle`).textContent = "THE BLURRY CITY";
             document.querySelector(`#serie`).innerHTML = allTheTbc
                 .map((elmt) => `<div class="unit"> <a href="../photo.html?photoId=${elmt.src}" class="link-photo">
             <img src="../img/${elmt.src}" alt="" class="photo"></a><h2>${elmt.alt}</h2></div>`)
