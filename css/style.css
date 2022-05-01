@@ -49,8 +49,13 @@ header {
 }
 
 section {
-    margin: 0;    
+    margin: 0;
     padding: 2rem 0;
+}
+
+.shadow {
+    box-shadow: 29px 40px 38px 0px rgba(0, 0, 0, 0.1), 
+                22px 10px 26px -6px rgba(0, 0, 0, 0.1);
 }
 
 /* --------------------------------------------------------------------*/
@@ -79,7 +84,9 @@ section {
 
 /* --------------------------------------------------------------------*/
 /* ------------------------------ About ------------------------------*/
-.about {   
+.about {
+    padding: 3rem 0;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,6 +95,9 @@ section {
 
 .about img {
     width: 60%;
+    padding: 2rem;
+
+    background-color: #FDFFF5;
 }
 
 .about p {
@@ -131,9 +141,7 @@ section {
 }
 
 .two img {
-    width:
-        80%;
-    border-radius: 20px;
+    width: 60%;
 }
 
 .big-text {
@@ -224,9 +232,10 @@ footer p {
 
 @media (max-width: 768px) {
 
-    h2{
+    h2 {
         margin-top: 15rem;
     }
+
     .about img {
         width: 80%;
     }
