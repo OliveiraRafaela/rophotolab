@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rafaela Oliveira Photography Webpage">
     <title>Photolab</title>
+    <script src="https://kit.fontawesome.com/29f187f06a.js" crossorigin="anonymous"></script>
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -13,15 +14,17 @@
 </head>
 
 <body>
-    <header id="home">
+    <header>
         <nav class="navbar">
-            <div class="logo"><a href="#home"><p>Rafaela Oliveira Photolab</p></a></div>
+            <div class="logo"><a href="#home">
+                    <p>Rafaela Oliveira Photolab</p>
+                </a></div>
             <a href="#" class="hamburger" id="hamburger">
                 <span class="bar"></span><span class="bar"></span><span class="bar"></span>
             </a>
             <div class="menu" id="menu">
                 <ul class="menu-links">
-                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#bio">The Artist</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#cv">CV</a></li>
                     <li><a href="#contact">Contact Info</a></li>
@@ -30,8 +33,39 @@
         </nav>
     </header>
     <main>
-        <section class="landing">
-            <h1>Here my daydreams come true</h1>
+        <section id="home">
+            <div class="landing"><h1>Here my daydreams come true</h1></div>            
+        </section>
+        <section id="bio">
+            <h2>The Artist</h2>
+            <div class="about">                
+                <img src="../img/expressionismo-0.jpeg" alt="Rafaela Oliveira drinking wine">
+                <p>Rafaela Oliveira is a Brazilian artist based in Toronto. Certified photographer by f/508
+                    Photography
+                    School in 2016, but living a relationship with capturing moments since 2009. Over the past decade,
+                    her work is
+                    getting inspired by discomforts, blurry lines and boring moments. </p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="page-header"> Contact information</h2>
+            <div class="container">
+                <article class="one">
+                    <div class="box ani">
+                        <p class="big-text">Don't get shy!</p>
+                    </div>
+                    <p class="medium-text">Send me a message</p>
+                    <address>
+                        <a href="mailto:rophotolab@gmail.com"><i
+                                class="fa-regular fa-envelope"></i>&nbsp;&nbsp;rophotolab@gmail.com</a><br>
+                        <a href="https://www.instagram.com/rophotolab/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i>&nbsp;&nbsp;rophotolab</a>
+                    </address>
+                </article>
+                <article class="two">                                            
+                    <img src="./img/msg02.jpg" alt="">
+                </article>
+            </div>
         </section>
     </main>
     <footer>

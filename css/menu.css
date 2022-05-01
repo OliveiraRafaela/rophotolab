@@ -8,7 +8,7 @@ https://www.npmjs.com/package/hamburger-menu
 
     position: relative;
     margin: 0;
-    padding: 0 1rem;    
+    padding: 0 1rem;
     max-width: 100%;
 
     display: flex;
@@ -18,12 +18,14 @@ https://www.npmjs.com/package/hamburger-menu
 
 .logo p {
     background-color: inherit;
+    /* background-color: aquamarine; */
     font-size: 4rem;
     font-weight: 700;
 
-    padding: 2rem;
+    padding: 2rem 0;
     margin: 0;
 }
+
 .menu-links {
     margin: 0;
     padding: 0;
@@ -36,14 +38,13 @@ https://www.npmjs.com/package/hamburger-menu
     display: block;
 }
 
-.menu-links a {    
+.menu-links a {
     padding: 2rem;
     transition: all 0.3s ease-in;
 }
 
-.menu-links a:hover {    
-    font-style: italic;
-    /* text-decoration: underline; */
+.menu-links a:hover {
+    text-decoration: underline;
     color: #FFF;
 }
 
@@ -68,6 +69,9 @@ https://www.npmjs.com/package/hamburger-menu
 }
 
 @media (max-width: 768px) {
+    .logo {
+        width: 60%;
+    }
 
     .hamburger {
         display: flex;
@@ -86,7 +90,7 @@ https://www.npmjs.com/package/hamburger-menu
     .menu.active {
         transform: translateX(0);
         transition: transform 0.4s;
-        
+
     }
 
     .navbar {

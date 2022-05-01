@@ -5,6 +5,22 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    max-width: 2000px;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+header, footer {
+    max-width: inherit;
+}
+
 p, a {
     font-size: 1.6rem;
 }
@@ -13,10 +29,28 @@ h1 {
     font-size: 5rem;
 }
 
+h2 {
+    width: 100%;
+    margin: 0;
+    margin-top: 5rem;
+    padding: 3rem 2rem;
+
+    font-size: 3rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    /* color: #fff;
+    background-color: #000; */
+}
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+section {
+    margin: 0;    
+    padding: 2rem 0;
 }
 
 /* --------------------------------------------------------------------*/
@@ -28,19 +62,147 @@ header {
 
     height: 100vh;
 
-    background-image: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0,
-        rgba(0, 0, 0, 0.5) 0
-      ), url('../img/long_expo_buildings.png');
+    background-image: linear-gradient(180deg,
+            rgba(255, 255, 255, 0) 0,
+            rgba(0, 0, 0, 0.5) 0), url('../img/long_expo_buildings.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.landing h1{
+
+.landing h1 {
+    padding: 0 2rem;
     color: #fff;
     /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), 2px 2px 3px rgba(0, 0, 0, 0.6);*/
 
+}
+
+/* --------------------------------------------------------------------*/
+/* ------------------------------ About ------------------------------*/
+.about {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about img {
+    width: 60%;
+}
+
+.about p {
+    text-align: center;
+    width: 60%;
+}
+
+/* --------------------------------------------------------------------*/
+/* ------------------------------ Contact ------------------------------*/
+.container {
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.one p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.two {
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two img {
+    width:
+        80%;
+    border-radius: 20px;
+}
+
+.big-text {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.medium-text {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem 0;
+}
+
+address a {
+    font-size: 2rem;
+    font-style: normal;
+
+    transition: all 0.3s ease-in;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------*/
+/* ------------------------------ Animation ------------------------------*/
+.box {
+    background: rgb(255, 255, 255);
+    vertical-align: middle;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ani {
+    animation: bg-change ease 7s infinite alternate;
+}
+
+@keyframes bg-change {
+    0% {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    25% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    50% {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    75% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        color: rgba(0, 0, 0, 1);
+    }
 }
 
 /* --------------------------------------------------------------------*/
@@ -58,4 +220,24 @@ footer {
 footer p {
     margin: 0;
     padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+
+    h2{
+        margin-top: 15rem;
+    }
+    .about img {
+        width: 80%;
+    }
+
+    .about p {
+        width: 80%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
